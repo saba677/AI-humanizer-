@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Human Text Studio</title><link rel="icon" href="/favicon.svg" type="image/svg+xml" /><link rel="stylesheet" href="/styles.css" /></head>
+  <body>
+    <main>
+      <header><p class="eyebrow">FAST AI EDITING</p><h1>Human Text Studio</h1><p class="lede">Natural, deliberate prose—without losing the technical soul of the original.</p></header>
+      <section class="controls"><label>Tone <select id="tone"><option>natural and professional</option><option>warm and conversational</option><option>clear and concise</option><option>confident and formal</option></select></label></section>
+      <section class="editors"><div><div class="label-row"><label for="source">SOURCE</label><span id="source-count">0 characters</span></div><textarea id="source" placeholder="Paste your text here…"></textarea></div><div><div class="label-row"><label for="result">REFINED TEXT</label><button id="copy" disabled>Copy</button></div><textarea id="result" readonly placeholder="Your refined text will appear here."></textarea></div></section>
+      <div class="action-row"><button id="run">Refine text <span>→</span></button><p id="status" role="status">Technical terms, figures, links, and code-like strings are protected.</p></div>
+    </main><script src="/app.js"></script>
+  </body>
+</html>
