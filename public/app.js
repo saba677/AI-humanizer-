@@ -256,7 +256,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 const response = await fetch('/api/humanize', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ text })
+                    body: JSON.stringify({
+                        text,
+                        tone: (document.getElementById('tone') || {}).value || 'natural',
+                        targetLanguage: (document.getElementById('targetLanguage') || {}).value.trim()
+                    })
                 });
 
                 const data = await response.json();
