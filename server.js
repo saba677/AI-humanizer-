@@ -62,7 +62,7 @@ CRITICAL INSTRUCTIONS:
                 { role: 'system', content: systemPrompt },
                 { role: 'user', content: `Rewrite the following text to make it sound entirely human-written and undetectable by AI detectors:\n\n${text}` }
             ],
-            model: 'llama-3.3-70b-versatile',
+            model: 'llama-3.1-70b-versatile',
             temperature: 0.85,
             max_tokens: 2048,
             top_p: 0.92,
